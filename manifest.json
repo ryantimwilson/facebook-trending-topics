@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+
+  "name": "Add Trending Descriptions",
+  "description": "Add descriptions to Facebook trending topics",
+  "version": "1.0",
+
+  "permissions": ["activeTab"],
+
+  "content_scripts": [
+    {
+      "matches": ["https://facebook.com/*", "https://www.facebook.com/*"],
+      "js": ["jquery-3.1.0.min.js", "content.js"]
+    }
+  ]
+}
