@@ -27,8 +27,10 @@ function showDescriptions() {
     });
 }
 
-$('#pagelet_trending_tags_and_topics').bind("DOMSubtreeModified", function() {
-    showDescriptions();
+$(document).on('DOMNodeInserted', '#pagelet_trending_tags_and_topics', function() {
+    $('#pagelet_trending_tags_and_topics').bind("DOMSubtreeModified", function() {
+        showDescriptions();
+    });
 });
 
 showDescriptions();
