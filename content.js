@@ -1,4 +1,4 @@
-function showDescriptions(p1, p2) {
+function showDescriptions() {
     $('#pagelet_trending_tags_and_topics').find('a[data-hovercard][topic-description != "true"]').each(function() {
         var descriptionDiv = $( this ).find(':first-child :first-child').next();
         $( this ).attr('topic-description', 'true');
